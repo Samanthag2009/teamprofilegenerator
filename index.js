@@ -27,14 +27,22 @@ const { identifier } = require('@babel/types')
             //getEmail()
             //getRole() //returns "Employee"
     class Employee {
-        constructor(name, ID, birthday, email, role) {
-            this.name = getName()
-            this.ID = getID()
-            this.birthday = getBirthday()
-            this.email = getEmail()
-            this.role = getRole()
+        constructor(name, id, birthday, email, role) {
+            this.name = name
+            this.id = id
+            this.birthday = birthday
+            this.email = email
+            this.role = role
         }
     }
+
+    const newEmployee = new Employee(
+        getName(),
+        getId(),
+        getBirthday(),
+        getEmail(),
+        getRole(),
+    );
     //**********TO DO**************
         //look up how to get information from input and addit to a class
         //Manager
