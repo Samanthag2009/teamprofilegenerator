@@ -1,16 +1,12 @@
 // command line application with user input
-    //TO DO: install NPM (fs-extra, inquirer, jest)
     //TO DO: Import appplicable modules (fs extra, inquirer, http, jest)
     const fs = require('fs-extra')
     const inq = require('inquirer')
+    const readLine = require('readline')
     const express = require('express')
 const { identifier } = require('@babel/types')
     const app = express()
     const port = 3000
-
-
-
-    //TO DO: create a main css file in the dir to store static styles
 
 //input is then generated into an HTML file
     //TO DO: create server function
@@ -45,6 +41,8 @@ const { identifier } = require('@babel/types')
     );
     //**********TO DO**************
         //look up how to get information from input and addit to a class
+   
+
         //Manager
             //extend employee
             //officeNumber
