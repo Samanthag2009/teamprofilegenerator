@@ -2,7 +2,7 @@
 const { exportAllDeclaration } = require('@babel/types');
 const { it } = require('node:test');
 const { describe } = require('yargs');
-const Engineer = require('../lib/engineer.js');
+const Engineer = require('../lib/engineer');
 
 
 //TO DO: Create testing suite for engineer.js
