@@ -1,11 +1,11 @@
-//TO DO: import path to index.js
+//Import path to employee.js
 const { exportAllDeclaration } = require('@babel/types');
 const { it } = require('node:test');
 const { describe } = require('yargs');
-const Employee = require('../index.js');
+const Employee = require('../lib/employee');
 
 
-//TO DO: Create testing suite for index.js
+//Create testing suite for employee.js
 describe('Employee', () => {
 //Create a test to insure that fields are returning, including role as "Employee"
     describe('name', () => 
