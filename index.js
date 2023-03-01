@@ -1,12 +1,26 @@
 // command line application with user input
-    //TO DO: Import appplicable modules (fs extra, inquirer, http, jest)
+    //TO DO: Import appplicable modules (fs extra, inquirer, jest)
     const fs = require('fs-extra')
     const inq = require('inquirer')
     const readLine = require('readline')
     const express = require('express')
 const { identifier } = require('@babel/types')
+const { default: inquirer } = require('inquirer')
     const app = express()
-    const port = 3000
+const team = []
+    
+// function to build a manager
+
+
+inquirer.prompt(
+    [
+        {
+
+        }
+    ]
+)
+
+
 
 //input is then generated into an HTML file
     //TO DO: create server function
@@ -22,23 +36,23 @@ const { identifier } = require('@babel/types')
             //getID()
             //getEmail()
             //getRole() //returns "Employee"
-    class Employee {
-        constructor(name, id, birthday, email, role) {
-            this.name = name
-            this.id = id
-            this.birthday = birthday
-            this.email = email
-            this.role = role
-        }
-    }
+    // class Employee {
+    //     constructor(name, id, birthday, email, role) {
+    //         this.name = name
+    //         this.id = id
+    //         this.birthday = birthday
+    //         this.email = email
+    //         this.role = role
+    //     }
+    // }
 
-    const newEmployee = new Employee(
-        getName(),
-        getId(),
-        getBirthday(),
-        getEmail(),
-        getRole(),
-    );
+    // const newEmployee = new Employee(
+    //     getName(),
+    //     getId(),
+    //     getBirthday(),
+    //     getEmail(),
+    //     getRole(),
+    // );
     //**********TO DO**************
         //look up how to get information from input and addit to a class
    

@@ -1,3 +1,10 @@
+const fs = require('fs-extra')
+    const inq = require('inquirer')
+    const readLine = require('readline')
+    const express = require('express')
+const { identifier } = require('@babel/types')
+    const app = express()
+    const port = 3000
 const readLine = require('readline')
 
 class Employee {
