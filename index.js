@@ -10,15 +10,43 @@ const { default: inquirer } = require('inquirer')
 const team = []
     
 // function to build a manager
+//the idea is to use prompt and then push to create an array that will then be used to generate a new HTML Document
 
-
-inquirer.prompt(
+async function newManager() {
+const managerObj = await inquirer.prompt(
     [
         {
-
-        }
+            type: 'input',
+            name: 'managerName',
+            message: "What is the manager's name?",
+        },
+        {
+            type: 'input',
+            name: 'managerID',
+            message: "What is the manager's employee ID?",
+        },
+        {
+            type: 'input',
+            name: 'managerBirthday',
+            message: "What is the manager's birthday?",
+        },
+        {
+            type: 'input',
+            name: 'managerEmail',
+            message: "What is the manager's email address?",
+        },
+        {
+            type: 'input',
+            name: 'officeNumber',
+            message: "What is the manager's office number?",
+        },
     ]
-)
+    ) 
+    const managerObj = {managerName, managerID, managerBirthday, managerEmail, officeNumber};
+    const manager = new Manager(managerName, managerID, managerBirthday, managerEmail, officeNumber);
+    team.push(manager)
+
+}
 
 
 
@@ -46,31 +74,9 @@ inquirer.prompt(
     //     }
     // }
 
-    // const newEmployee = new Employee(
-    //     getName(),
-    //     getId(),
-    //     getBirthday(),
-    //     getEmail(),
-    //     getRole(),
-    // );
+
     //**********TO DO**************
         //look up how to get information from input and addit to a class
-   
-
-        //Manager
-            //extend employee
-            //officeNumber
-            //getRole() //overridden to return "manager"
-        //Engineer
-            //extend employee
-            //github //github username
-            //getGithub()
-            //getRole() //overriden to return "engineer"
-        //Intern
-            //extend employee
-            //school
-            //getSchool()
-            //gerRole() overridden to return "Intern"
 
 // features:
 //E-mail: links to default email application with to field populated

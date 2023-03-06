@@ -2,7 +2,7 @@
 const { exportAllDeclaration } = require('@babel/types');
 const { it } = require('node:test');
 const { describe } = require('yargs');
-const Intern = require('../lib/intern.js');
+const Intern = require('../lib/intern');
 
 
 //Create testing suite for intern.js
